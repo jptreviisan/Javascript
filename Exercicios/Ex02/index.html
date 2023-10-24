@@ -3,19 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do dia</title>
+    <title>Verificador de Idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="carregar()">
     <header>
-        <h1>Hora do dia</h1>
+        <h1>Verificador de idade</h1>
     </header>
     <section>
-        <div id="msg">
-            Testando
+        <div>
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+                
+            </p>
+            <p>
+                <input type="radio" name="radsex" id="masc">
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
-        <div id="foto">
-            <img id="imagem" src="fototarde.jpg" alt="Foto do dia">
+        <div id="res">
+            Preenchar os dados acima para ver o resultado!
         </div>
     </section>
 

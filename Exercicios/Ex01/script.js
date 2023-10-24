@@ -3,8 +3,6 @@ function carregar() {
     var img = document.getElementById('imagem')
     var data = new Date()
     var hora = data.getHours() 
-
-    hora = 9
     msg.innerHTML = `Agora são ${hora} horas.`
     if (hora >= 5 && hora <= 11 ) {
         img.src = 'fotomanha.png'
